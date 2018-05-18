@@ -1,0 +1,150 @@
+/**** slider ****/
+
+#slider, #slider ul {
+  height: 50px;
+}
+
+#slider {
+  margin: auto 15%;
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+}
+
+#slider ul {
+  list-style: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 400%;
+  margin: 0;
+  padding: 0;
+}
+
+#slider li {
+  margin: 0px;
+  float: left;
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+}
+
+/*** target hooks ****/
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+
+  2%, 20% {
+    left: 0px;
+    opacity: 1;
+  }
+
+  21% {
+    left: 0px;
+    opacity: 0;
+  }
+
+  21.1% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  22%, 40% {
+    left: -100%;
+    opacity: 1;
+  }
+
+  41% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  41.1% {
+    left: -200%;
+    opacity: 0;
+  }
+
+  42%, 60% {
+    left: -200%;
+    opacity: 1;
+  }
+
+  61% {
+    left: -200%;
+    opacity: 0;
+  }
+
+  61.1% {
+    left: -300%;
+    opacity: 0;
+  }
+
+  62%, 80% {
+    left: -300%;
+    opacity: 1;
+  }
+
+  99% {
+    left: -300%;
+    opacity: 1;
+  }
+
+  99.1% {
+    left: -300%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+#slider ul {
+  animation: slide 20s infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+// responsive slides
+
+.rslides {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &:first-child {
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    img {
+      display: block;
+      height: auto;
+      float: left;
+      width: 100%;
+      border: 0;
+    }
+  }
+}
