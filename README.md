@@ -1,6 +1,6 @@
 # kobotoolbox.org
 
-The basic code for the KoBoToolbox website. 
+A simple HTML/CSS website for KoBoToolbox. 
 
 ## Development setup 
 
