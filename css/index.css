@@ -223,6 +223,9 @@ header {
     color: transparent;
     background: url("../images/kobologo.svg") no-repeat 0 100%;
     background-size: contain; }
+    header h1 a, header h1 a:hover {
+      color: transparent;
+      font-size: 1em; }
   header ul#nav {
     flex-grow: 0;
     margin: 0px;
@@ -240,6 +243,9 @@ header {
         text-decoration: none; }
       header ul#nav li.current a {
         color: #2095f3; }
+    @media screen and (max-width: 359px) {
+      header ul#nav {
+        padding: 24px 15px; } }
 
 .bg {
   background: url("../images/front_background2.jpg") left top no-repeat;
@@ -251,8 +257,8 @@ header {
   width: 100%; }
 
 .section {
-  padding: 30px;
-  padding-bottom: 50px;
+  padding: 50px 30px;
+  padding-bottom: 70px;
   border-bottom: 1px solid #DDD; }
   .section#section-1 {
     color: white;
@@ -275,10 +281,15 @@ header {
       text-transform: uppercase;
       padding: 1em 2em;
       font-size: 2.5rem; }
+    @media screen and (max-width: 550px) {
+      .section#section-1 h1 {
+        padding: 1em 0;
+        font-size: 2.2rem; } }
   .section h2 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-top: 1em; }
   .section h3 {
     text-transform: uppercase;
     font-size: 1.4em;
@@ -342,7 +353,8 @@ header {
   background: #FFF; }
   #sign-up .try-now {
     text-align: center;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    padding-top: 50px; }
     @media screen and (max-width: 768px) {
       #sign-up .try-now {
         margin-bottom: 2em; } }
@@ -440,8 +452,25 @@ header {
 
 footer {
   background: rgba(65, 68, 83, 0.9);
-  padding: 80px 20px;
+  padding: 50px 20px;
   text-align: center;
   color: white; }
   footer p {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    margin: 0.4em 0; }
+    footer p:last-child {
+      margin-top: 1.5em; }
+    footer p a {
+      color: white;
+      opacity: 0.6;
+      text-decoration: none;
+      margin: 0px 10px; }
+
+.section-text-page .container {
+  max-width: 900px; }
+  .section-text-page .container h1 {
+    text-transform: uppercase;
+    padding-top: 50px;
+    text-align: center; }
+  .section-text-page .container h3 {
+    margin-top: 2em; }

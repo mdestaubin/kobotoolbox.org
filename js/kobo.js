@@ -1,6 +1,4 @@
 $(function() {
-  console.log( "The DOM is now loaded and can be manipulated." );
-
 	$('#nav').onePageNav({
 		currentClass: 'current',
 		changeHash: false,

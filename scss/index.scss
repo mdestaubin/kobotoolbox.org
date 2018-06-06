@@ -98,6 +98,11 @@ header {
     color: transparent;
     background: url("../images/kobologo.svg") no-repeat 0 100%;
     background-size: contain;
+
+    a, a:hover {
+      color: transparent;
+      font-size: 1em;
+    }
   }
 
   ul#nav {
@@ -123,6 +128,10 @@ header {
         color: $blue;
       }
     }
+
+    @media screen and (max-width: 359px) {
+      padding: 24px 15px;
+    }
   }
 }
 
@@ -137,8 +146,8 @@ header {
 }
 
 .section {
-  padding: 30px;
-  padding-bottom: 50px;
+  padding: 50px 30px;
+  padding-bottom: 70px;
   border-bottom: 1px solid #DDD;
 
   &#section-1 {
@@ -168,12 +177,20 @@ header {
       padding: 1em 2em;
       font-size: 2.5rem;
     }
+
+    @media screen and (max-width: 550px) {
+      h1 {
+        padding: 1em 0;
+        font-size: 2.2rem;
+      }
+    }
   }
 
   h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
+    margin-top: 1em;
   }
 
   h3 {
@@ -273,6 +290,7 @@ header {
   .try-now {
     text-align: center;
     margin-bottom: 0px;
+    padding-top: 50px;
 
     @media screen and (max-width: 768px) {
       margin-bottom: 2em;
@@ -413,11 +431,39 @@ header {
 
 footer {
   background: rgba(65, 68, 83, 0.9);
-  padding: 80px 20px;
+  padding: 50px 20px;
   text-align: center;
   color: white;
 
   p {
     font-size: 0.9em;
+    margin: 0.4em 0;
+
+    &:last-child {
+      margin-top: 1.5em;
+    }
+
+    a {
+      color: white;
+      opacity: 0.6;
+      text-decoration: none;
+      margin: 0px 10px;
+    }
+  }
+}
+
+.section-text-page {
+  .container {
+    max-width: 900px;
+
+    h1 {
+      text-transform: uppercase;
+      padding-top: 50px;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 2em;
+    }
   }
 }
