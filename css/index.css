@@ -25,7 +25,12 @@
   width: 25%;
   display: inline-block;
   height: 50px;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400; }
+  @media screen and (min-width: 769px) {
+    #slider li {
+      font-size: 1.5rem; } }
 
 /*** target hooks ****/
 @-webkit-keyframes slide {
@@ -114,8 +119,8 @@
     opacity: 0; } }
 
 #slider ul {
-  -webkit-animation: slide 20s infinite;
-          animation: slide 20s infinite; }
+  -webkit-animation: slide 12s infinite;
+          animation: slide 12s infinite; }
   #slider ul:hover {
     -webkit-animation-play-state: paused;
             animation-play-state: paused; }
@@ -169,8 +174,10 @@ h1, h2, h3 {
   line-height: 1.25em; }
 
 a {
-  color: #2095f3; }
+  color: #2095f3;
+  transition: all 0.2s; }
   a:hover {
+    transition: all 0.2s;
     color: #0a6dbc; }
   a.button {
     font-family: 'Source Sans Pro', sans-serif;
@@ -465,6 +472,9 @@ footer {
       opacity: 0.6;
       text-decoration: none;
       margin: 0px 10px; }
+      footer p a:hover {
+        color: white;
+        opacity: 1; }
 
 .section-text-page .container {
   max-width: 900px; }
