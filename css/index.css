@@ -409,6 +409,34 @@ header {
     color: white; }
   #partners h3 {
     margin-top: 50px; }
+  #partners .group-1 a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px; }
+  #partners .group-1 img {
+    max-height: 65px;
+    width: auto; }
+  #partners .group-2 {
+    padding: 10px 40px; }
+    #partners .group-2 a {
+      display: inline-block;
+      margin: 10px;
+      margin-bottom: 25px;
+      vertical-align: middle; }
+    #partners .group-2 img {
+      vertical-align: middle;
+      min-height: 32px;
+      max-height: 45px;
+      height: auto;
+      width: auto; }
+    #partners .group-2 .fidelity img, #partners .group-2 .macarthur img {
+      min-height: 18px;
+      max-height: 18px; }
+    #partners .group-2 .wcs img {
+      min-height: 40px; }
+    #partners .group-2 .hilton img, #partners .group-2 .IRC img {
+      min-height: 65px;
+      max-height: 65px; }
 
 #help {
   background: white;

@@ -362,6 +362,52 @@ header {
   h3 {
     margin-top: 50px;
   }
+
+  .group-1 {
+    a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    img {
+      max-height: 65px;
+      width: auto;
+    }
+  }
+
+  .group-2 {
+    padding: 10px 40px;
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      margin-bottom: 25px;
+      vertical-align: middle;
+    }
+
+    img {
+      vertical-align: middle;
+      min-height: 32px;
+      max-height: 45px;
+      height: auto;
+      width: auto;
+    }
+
+    .fidelity img, .macarthur img {
+      min-height: 18px;
+      max-height: 18px;
+    }
+
+    .wcs img {
+      min-height: 40px;
+    }
+
+    .hilton img, .IRC img {
+      min-height: 65px;
+      max-height: 65px;
+    }
+  }
 }
 
 #help {
