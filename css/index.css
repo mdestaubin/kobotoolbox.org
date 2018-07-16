@@ -403,7 +403,7 @@ header {
 #partners {
   text-align: center;
   padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.9);
+  background: rgba(65, 68, 83, 0.8);
   border-bottom: none; }
   #partners h2, #partners h3 {
     color: white; }
@@ -438,14 +438,8 @@ header {
       min-height: 65px;
       max-height: 65px; }
 
-#help {
-  background: white;
-  text-align: center; }
-  #help .container {
-    max-width: 600px; }
-
 #dev {
-  background: #F8F8F8; }
+  background: #FFF; }
   #dev .main-projects {
     max-width: 450px;
     display: flex;
@@ -494,6 +488,12 @@ header {
         margin-top: 5px;
         color: #a6aaba; }
 
+#help {
+  background: #F8F8F8;
+  text-align: center; }
+  #help .container {
+    max-width: 600px; }
+
 footer {
   background: rgba(65, 68, 83, 0.9);
   padding: 50px 20px;
@@ -521,3 +521,40 @@ footer {
     text-align: center; }
   .section-text-page .container h3 {
     margin-top: 2em; }
+
+#examples {
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none; }
+  #examples h2, #examples h3, #examples p {
+    color: white; }
+  #examples .group-examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 830px;
+    margin: 0 auto; }
+    #examples .group-examples .example-item {
+      padding: 25px;
+      padding-right: 15px;
+      width: 25%;
+      box-sizing: border-box;
+      text-align: left; }
+      @media screen and (max-width: 768px) {
+        #examples .group-examples .example-item {
+          width: 50%; } }
+      #examples .group-examples .example-item a {
+        font-size: 18px;
+        line-height: 20px;
+        color: #50acf6;
+        text-decoration: none;
+        opacity: 0.75; }
+        #examples .group-examples .example-item a span {
+          text-transform: uppercase;
+          font-family: 'Source Sans Pro', sans-serif;
+          color: #FFF;
+          opacity: 0.75;
+          display: block; }
+        #examples .group-examples .example-item a:hover, #examples .group-examples .example-item a:hover span {
+          opacity: 1; }

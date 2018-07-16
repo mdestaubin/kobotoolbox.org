@@ -352,7 +352,7 @@ header {
 #partners {
   text-align: center;
   padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.9);
+  background: rgba(65, 68, 83, 0.8);
   border-bottom: none;
 
   h2, h3 {
@@ -410,17 +410,8 @@ header {
   }
 }
 
-#help {
-  background: white;
-  text-align: center;
-
-  .container {
-    max-width: 600px;
-  }
-}
-
 #dev {
-  background: #F8F8F8;
+  background: #FFF;
 
   .main-projects {
     max-width: 450px;
@@ -489,6 +480,15 @@ header {
   }
 }
 
+#help {
+  background: #F8F8F8;
+  text-align: center;
+
+  .container {
+    max-width: 600px;
+  }
+}
+
 footer {
   background: rgba(65, 68, 83, 0.9);
   padding: 50px 20px;
@@ -529,6 +529,57 @@ footer {
 
     h3 {
       margin-top: 2em;
+    }
+  }
+}
+
+#examples {
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+
+  h2, h3, p {
+    color: white;
+  }
+
+  .group-examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 830px;
+    margin: 0 auto;
+
+    .example-item {
+      padding: 25px;
+      padding-right: 15px;
+      width: 25%;
+      box-sizing: border-box;
+      text-align: left;
+
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 20px;
+        color: lighten($blue, 10%);
+        text-decoration: none;
+        opacity: 0.75;
+
+        span {
+          text-transform: uppercase;
+          font-family: 'Source Sans Pro', sans-serif;
+          color: #FFF;
+          opacity: 0.75;
+          display: block;
+        }
+
+        &:hover, &:hover span {
+          opacity: 1;
+        }
+      }
     }
   }
 }
