@@ -482,6 +482,8 @@ header {
         #dev .team .team-item {
           width: 50%;
           padding-top: 0.5em; } }
+      #dev .team .team-item b {
+        white-space: nowrap; }
       #dev .team .team-item span {
         display: block;
         font-size: 0.9em;
