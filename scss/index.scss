@@ -158,6 +158,7 @@ header {
     color: white;
     text-align: center;
     position: relative;
+    min-height: 600px;
 
     &:after {
       content: ' ';
@@ -470,7 +471,7 @@ header {
         padding-top: 0.5em;
       }
 
-      b { 
+      b {
         white-space: nowrap
       }
 

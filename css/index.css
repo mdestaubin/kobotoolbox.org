@@ -271,7 +271,8 @@ header {
   .section#section-1 {
     color: white;
     text-align: center;
-    position: relative; }
+    position: relative;
+    min-height: 100vh; }
     .section#section-1:after {
       content: ' ';
       background: rgba(65, 68, 83, 0.75);
@@ -494,7 +495,7 @@ header {
   background: #F8F8F8;
   text-align: center; }
   #help .container {
-    max-width: 800px; }
+    max-width: 600px; }
 
 footer {
   background: rgba(65, 68, 83, 0.9);
