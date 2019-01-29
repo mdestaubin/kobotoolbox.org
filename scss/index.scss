@@ -149,10 +149,13 @@ header {
   width: 100%;
 }
 
-.section {
-  padding: 50px 30px;
-  padding-bottom: 70px;
+section.section {
+  padding: 50px 30px 70px 30px;
   border-bottom: 1px solid #DDD;
+
+  &:first-of-type {
+    padding-top: 70px;
+  }
 
   &#section-1 {
     color: white;
@@ -220,6 +223,10 @@ header {
 
 #features {
   background: #F8F8F8;
+}
+
+#latest-blog-post {
+  background: #fff;
 }
 
 .two-cols {
@@ -490,7 +497,7 @@ header {
   text-align: center;
 
   .container {
-    max-width: 600px;
+    max-width: 720px;
   }
 }
 
@@ -522,7 +529,7 @@ footer {
   }
 }
 
-.section-text-page {
+section.section-text-page {
   .container {
     max-width: 900px;
 
@@ -586,5 +593,55 @@ footer {
         }
       }
     }
+  }
+}
+
+.post {
+  .post__title {
+    margin-bottom: 1rem;
+  }
+
+  .post__date {
+    font-style: italic;
+    margin: 1rem 0;
+    text-align: center;
+    display: block;
+  }
+
+  .post__related {
+    border-top: 1px dotted #ddd;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    & > a:nth-of-type(even) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.post-summary {
+  border-top: 1px dotted #ddd;
+  max-width: $max_width;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  .post-summary__title {
+    font-size: 1.5rem;
+    text-transform: none;
+    margin: 1rem 0.5rem;
+    text-align: left;
+  }
+
+  .post-summary__date {
+    float: right;
+    margin: 1rem 0.5rem 1rem 1rem;
+    font-style: italic;
+    line-height: 1.85rem;
+  }
+
+  .post-summary__summary {
+    margin: 1rem 0.5rem;
   }
 }

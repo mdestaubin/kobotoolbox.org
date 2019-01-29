@@ -4,7 +4,7 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
 
 <div class="bg"></div>
 
-<div id="section-1" class="section">
+<section id="section-1" class="section">
     <div class="container slider">
         <h1>Simple, Robust and Powerful Tools <br/>For Data Collection</h1>
         <div id="slider">
@@ -16,11 +16,11 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
           </ul>
         </div>
     </div>
-</div>
+</section>
 
-<div id="features" class="section">
+<section id="features" class="section">
     <div class="container">
-        <h2><span>Features</span></h2>
+        <h2>Features</h2>
         <div class="two-cols f1">
             <div class="col col-wide">
                 <ul id="slider-f1" class="rslides">
@@ -79,9 +79,9 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div id="sign-up" class="section">
+<section id="sign-up" class="section">
     <div class="container">
         <h2>Get Started</h2>
         <p class="centered">Get started with KoBoToolbox now, it's free and it takes under a minute. We have two publicly-available instances of KoBoToolbox you can choose from:</p>
@@ -102,9 +102,9 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
         <p class="centered">For more information on the differences between the two servers and to help determine which one is right for you, please read our <a href="http://support.kobotoolbox.org/getting-started/which-server-should-i-use">Which Server Should I Use?</a> support article.</p><br/>
         <p class="centered">Advanced users can also install KoBoToolbox on their own server (or on a local machine) using Docker. See our <a href="https://github.com/kobotoolbox/kobo-docker">kobo-docker</a> repository on GitHub for details.</p>
     </div>
-</div>
+</section>
 
-<div id="partners" class="section">
+<section id="partners" class="section">
     <h2>Open Source Development supported by</h2>
     <div class="group-1">
         <a href="https://hhi.harvard.edu"><img src="images/logos/HHI.png" /></a>
@@ -136,9 +136,9 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
     </div>
     <br/><br/>
     <!-- <img src="images/addtl-support.png" /> -->
-</div>
+</section>
 
-<div id="about" class="section">
+<section id="about" class="section">
     <div class="container">
         <h2>About KoBoToolbox</h2>
         <p>KoBoToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries. Our teams of developers and researchers are based in Cambridge, MA and many other places around the world. </p>
@@ -147,9 +147,9 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
         </div>
         <p>Quickly collecting reliable information in a humanitarian crisis – especially following a natural disaster such as a large earthquake or a typhoon taking place in a poor country – is the critical link to saving the lives of the most vulnerable. Understanding the population’s needs is often neglected for lack of quick means to gather and analyze this crucial information. KoBoToolbox, developed by the Harvard Humanitarian Initiative, is an open source suite of tools for data collection and analysis in humanitarian emergencies and other challenging environments that was built to address this gap. KoBoToolbox is funded entirely through generous grants and donations from our partners. </p>
     </div>
-</div>
+</section>
 
-<div id="dev" class="section">
+<section id="dev" class="section">
     <div class="container">
         <h2>Development</h2>
         <p class="centered">Our work is open-source. For more on our projects and to learn how you can contribute, click on one of the projects below. You can also go to our <a href="https://github.com/kobotoolbox" target="_blank">organization page on GitHub</a> for a full list of our projects. </p>
@@ -211,9 +211,9 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
         </div>
         <p class="centered small">We test our products using <a href="https://www.browserstack.com/" target="_blank">BrowserStack</a>. </p>
     </div>
-</div>
+</section>
 
-<div id="examples" class="section">
+<section id="examples" class="section">
     <div class="container">
         <h2>Examples from the field</h2>
         <p>KoBoToolbox is used by many organizations and researchers in a variety of contexts all over the world. <br/>Here are a few examples of KoBoToolbox in action:</p>
@@ -244,9 +244,19 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div id="help" class="section">
+<section id="latest-blog-post" class="section">
+    <div class="container">
+        <h2>Latest blog post</h2>
+
+        {% for post in site.posts limit:1 %}
+            {% include post-summary.liquid post=post %}
+        {% endfor %}
+    </div>
+</section>
+
+<section id="help" class="section">
     <div class="container">
         <h2>Support</h2>
         <div class="two-cols">
@@ -261,4 +271,4 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
         </div>
         <p>You can also <a href="https://twitter.com/kobotoolbox">follow us on Twitter</a> for product updates, media mentions and service notices. For any other inquires or just to get in touch, please email <a href="mailto:info@kobotoolbox.org">info@kobotoolbox.org</a> </p>
     </div>
-</div>
+</section>

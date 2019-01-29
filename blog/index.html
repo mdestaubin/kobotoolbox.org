@@ -2,12 +2,12 @@
 title: "Blog | KoBoToolbox"
 ---
 
-<div class="section section-text-page">
+<section class="section section-text-page">
     <div class="container">
         <h1>Blog</h1>
 
-        {% for post in site.posts | sort: "date" | reverse %}
+        {% for post in site.posts %}
             {% include post-summary.liquid post=post %}
         {% endfor %}
     </div>
-</div>
+</section>
