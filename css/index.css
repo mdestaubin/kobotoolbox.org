@@ -211,6 +211,19 @@ p.small {
   margin-top: 2em;
   opacity: 0.7; }
 
+table {
+  border-collapse: collapse;
+  font-size: 0.9em; }
+  table td, table th {
+    padding: 0.5em; }
+  table th {
+    text-align: left; }
+  table td.centered,
+  table th.centered {
+    text-align: center; }
+  table tbody td, table tbody th, table thead td, table thead th {
+    border: 1px solid currentColor; }
+
 @media screen and (max-width: 767px) {
   .hide-mobile {
     display: none !important; } }
