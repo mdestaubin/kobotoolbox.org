@@ -255,8 +255,8 @@ header {
       header ul#nav {
         padding: 24px 15px; } }
 
-.bg {
-  background: url("../images/front_background2.jpg") center center no-repeat;
+.bg{
+  background: url("../images/hhi.jpg") center center no-repeat;
   background-size: cover;
   position: fixed;
   z-index: -1;
@@ -314,6 +314,56 @@ header {
 
 #features {
   background: #F8F8F8; }
+
+#kobo {
+  background: #F8F8F8; }
+  #kobo .video {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    height: 0;
+    padding-bottom: 56.25%; }
+  #kobo iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px; }
+
+#members {
+  background: #FFF; }
+
+#khc{
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none; }
+  #khc h2, #khc h3, #khc h4, #khc p {
+    color: white; }
+  #khc ul {
+    text-align: left;
+  }
+  #khc h3 {
+    margin-top: 50px; }
+  #khc h4 {
+  text-align: left;
+  }
+  #khc a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px; }
+  #khc img {
+    max-height: 65px;
+    width: auto; }
+
+#join {
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none; }
+  #join h2, #join h3, #join p {
+    color: white; }
 
 @media screen and (max-width: 768px) {
   .two-cols.f2 {
