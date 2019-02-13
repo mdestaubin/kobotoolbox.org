@@ -246,7 +246,7 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
     </div>
 </section>
 
-<section id="latest-blog-post" class="section">
+<section id="blog" class="section">
     <div class="container">
         <h2>Latest blog post</h2>
 
@@ -254,6 +254,12 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
             {% include post-summary.liquid post=post %}
         {% endfor %}
     </div>
+
+    {% if site.posts.size >= 2 %}
+        <div class="container container--centered">
+            <a class="button" href="{{site.baseurl}}/blog">More…</a>
+        </div>
+    {% endif %}
 </section>
 
 <section id="help" class="section">

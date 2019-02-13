@@ -62,7 +62,11 @@
                 <li class="hide-mobile"><a href="{{site.baseurl}}/#features">Features</a></li>
                 <li><a href="{{site.baseurl}}/#sign-up">Sign Up</a></li>
                 <li class="hide-mobile"><a href="{{site.baseurl}}/#about">About</a></li>
-                <li class="hide-mobile"><a href="{{site.baseurl}}/blog">Blog</a></li>
+                {% if page.isBlog %}
+                    <li class="hide-mobile current"><a href="{{site.baseurl}}/blog">Blog</a></li>
+                {% else %}
+                    <li class="hide-mobile"><a href="{{site.baseurl}}/#blog">Blog</a></li>
+                {% endif %}
                 <li class="hide-mobile"><a href="{{site.baseurl}}/#help">Help</a></li>
             </ul>
         </nav>

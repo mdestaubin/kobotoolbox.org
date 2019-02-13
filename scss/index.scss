@@ -49,7 +49,6 @@ a {
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
-    margin-bottom: 1em;
 
     &:hover {
       background: darken($blue, 15%);
@@ -243,13 +242,17 @@ section.section {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+  &.container--centered {
+    text-align: center;
+  }
 }
 
 #features {
   background: #F8F8F8;
 }
 
-#latest-blog-post {
+#blog {
   background: #fff;
 }
 
@@ -326,6 +329,10 @@ section.section {
 
 #sign-up {
   background: #FFF;
+
+  a.button {
+      margin-bottom: 1em;
+  }
 
   .try-now {
     text-align: center;

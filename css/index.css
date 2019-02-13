@@ -189,8 +189,7 @@ a {
     padding-top: 10px;
     text-decoration: none;
     display: inline-block;
-    border-radius: 5px;
-    margin-bottom: 1em; }
+    border-radius: 5px; }
     a.button:hover {
       background: #0a6dbc;
       color: white; }
@@ -326,11 +325,13 @@ section.section {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+  .container.container--centered {
+    text-align: center; }
 
 #features {
   background: #F8F8F8; }
 
-#latest-blog-post {
+#blog {
   background: #fff; }
 
 @media screen and (max-width: 768px) {
@@ -380,6 +381,8 @@ section.section {
 
 #sign-up {
   background: #FFF; }
+  #sign-up a.button {
+    margin-bottom: 1em; }
   #sign-up .try-now {
     text-align: center;
     margin-bottom: 0px;

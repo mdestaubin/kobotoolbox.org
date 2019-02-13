@@ -32,3 +32,4 @@ defaults:
       path: "_posts"
     values:
       layout: "blog-post"
+      isBlog: true
