@@ -2,17 +2,17 @@
 
 <main role="main">
     <section class="section section-text-page">
-        <div class="container post">
-            <h2 class="post__title">{{ page.title }}</h2>
-            <time datetime="{{ page.date }}" class="post__date">{{ page.date | date_to_string }}</time>
+        <div class="container">
+            <h2 class="post-title">{{ page.title }}</h2>
+            <time datetime="{{ page.date }}" class="post-date">{{ page.date | date_to_string }}</time>
             {{ content }}
 
-            <nav class="post__related">
+            <nav class="post-related">
                 {% if page.previous %}
-                    <a href="{{ site.baseurl }}{{ page.previous.url }}">&larr;&nbsp;{{ page.previous.title }}</a>
+                    <a class="post-related__link post-related__link--previous" href="{{ site.baseurl }}{{ page.previous.url }}">&larr;&nbsp;{{ page.previous.title }}</a>
                 {% endif %}
                 {% if page.next %}
-                    <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}&nbsp;&rarr;</a>
+                    <a class="post-related__link post-related__link--next" href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}&nbsp;&rarr;</a>
                 {% endif %}
             </nav>
         </div>

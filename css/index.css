@@ -281,12 +281,12 @@ section.section {
   border-bottom: 1px solid #DDD; }
   section.section:first-of-type {
     padding-top: 70px; }
-  section.section#section-1 {
+  section.section#home {
     color: white;
     text-align: center;
     position: relative;
     min-height: 600px; }
-    section.section#section-1:after {
+    section.section#home:after {
       content: ' ';
       background: rgba(65, 68, 83, 0.75);
       background: linear-gradient(to bottom, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
@@ -295,19 +295,19 @@ section.section {
       position: absolute;
       left: 0px;
       top: 0px; }
-    section.section#section-1 .container {
+    section.section#home .container {
       padding-top: 200px;
       position: relative;
       z-index: 2; }
       @media screen and (min-width: 769px) {
-        section.section#section-1 .container {
+        section.section#home .container {
           padding-top: 300px; } }
-    section.section#section-1 h1 {
+    section.section#home h1 {
       text-transform: uppercase;
       padding: 1em 2em;
       font-size: 2.5rem; }
     @media screen and (max-width: 550px) {
-      section.section#section-1 h1 {
+      section.section#home h1 {
         padding: 1em 0;
         font-size: 2.2rem; } }
   section.section h2 {
@@ -582,23 +582,33 @@ section.section-text-page .container {
         #examples .group-examples .example-item a:hover, #examples .group-examples .example-item a:hover span {
           opacity: 1; }
 
-.post .post__title {
+.post-title {
   margin-bottom: 1rem; }
 
-.post .post__date {
+.post-date {
   font-style: italic;
   margin: 1rem 0;
   text-align: center;
   display: block; }
 
-.post .post__related {
+.post-related {
   border-top: 1px dotted #ddd;
   margin-top: 1rem;
   padding-top: 1rem;
-  display: flex;
-  justify-content: space-between; }
-  .post .post__related > a:nth-of-type(even) {
-    margin-left: 1rem; }
+  display: flex; }
+
+.post-related__link {
+  width: calc(50% - 0.5rem); }
+  .post-related__link.post-related__link--previous {
+    text-align: left;
+    margin-right: 0.5rem; }
+    .post-related__link.post-related__link--previous:only-child {
+      margin-right: 50%; }
+  .post-related__link.post-related__link--next {
+    text-align: right;
+    margin-left: 0.5rem; }
+    .post-related__link.post-related__link--next:only-child {
+      margin-left: 50%; }
 
 .post-summary {
   border-top: 1px dotted #ddd;

@@ -25,7 +25,7 @@ $(function() {
   function setHeight() {
     windowHeight = $(window).innerHeight();
     headerHeight = $('header').height() - 10;
-    $('#section-1').css('height', windowHeight - headerHeight);
+    $('#home').css('height', windowHeight - headerHeight);
     $('.bg').css('height', windowHeight);
   };
   setHeight();

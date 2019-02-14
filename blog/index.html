@@ -10,5 +10,9 @@ isBlog: true
         {% for post in site.posts %}
             {% include post-summary.liquid post=post %}
         {% endfor %}
+
+        {% if site.posts.size == 0 %}
+            <p>There are no blog posts yet.</p>
+        {% endif %}
     </div>
 </section>

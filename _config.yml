@@ -11,7 +11,7 @@ encoding: utf-8
 markdown: kramdown
 kramdown:
   auto_ids: false
-timezone: Europe/Warsaw
+timezone: US/Eastern
 port: 2038 # 0 to 65535
 exclude:
   - scss

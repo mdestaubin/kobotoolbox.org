@@ -180,7 +180,7 @@ section.section {
     padding-top: 70px;
   }
 
-  &#section-1 {
+  &#home {
     color: white;
     text-align: center;
     position: relative;
@@ -627,27 +627,42 @@ section.section-text-page {
   }
 }
 
-.post {
-  .post__title {
-    margin-bottom: 1rem;
+.post-title {
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  font-style: italic;
+  margin: 1rem 0;
+  text-align: center;
+  display: block;
+}
+
+.post-related {
+  border-top: 1px dotted #ddd;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.post-related__link {
+  width: calc(50% - 0.5rem);
+
+  &.post-related__link--previous {
+    text-align: left;
+    margin-right: 0.5rem;
+
+    &:only-child {
+      margin-right: 50%;
+    }
   }
 
-  .post__date {
-    font-style: italic;
-    margin: 1rem 0;
-    text-align: center;
-    display: block;
-  }
+  &.post-related__link--next {
+    text-align: right;
+    margin-left: 0.5rem;
 
-  .post__related {
-    border-top: 1px dotted #ddd;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-
-    & > a:nth-of-type(even) {
-      margin-left: 1rem;
+    &:only-child {
+      margin-left: 50%;
     }
   }
 }
