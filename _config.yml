@@ -1,0 +1,35 @@
+name: "KoBoToolbox"
+shortdescription: "Data Collection Tools for Challenging Environments"
+description: "KoBoToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries."
+baseurl: "https://kobotoolbox.org"
+
+# site configuration
+safe: true
+quiet: false
+future: true
+encoding: utf-8
+markdown: kramdown
+kramdown:
+  auto_ids: false
+timezone: US/Eastern
+port: 2038 # 0 to 65535
+exclude:
+  - scss
+  - node_modules
+  - README.md
+  - package.json
+  - package-lock.json
+  - Gulpfile.js
+permalink: /blog/:title
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "blog-post"
+      isBlog: true

@@ -1,16 +1,16 @@
 $(function() {
-	$('#nav').onePageNav({
-		currentClass: 'current',
-		changeHash: false,
-		scrollSpeed: 750,
-		scrollThreshold: 0.5
-	});
+    $('#nav').onePageNav({
+        currentClass: 'current',
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5
+    });
 
-	$.ajax({
-  	url: "https://api.github.com/orgs/kobotoolbox/repos?type=public",
-  	cache: false,
-  	crossDomain: true
-	}).done(function( data ) {
+    $.ajax({
+      url: "https://api.github.com/orgs/kobotoolbox/repos?type=public",
+      cache: false,
+      crossDomain: true
+    }).done(function( data ) {
     let repos = ['kpi', 'kobo-docker', 'collect', 'enketo-express'];
     repos.forEach(function(r) {
       var repoDetails = data.find(item => item.name === r);
@@ -25,11 +25,11 @@ $(function() {
   function setHeight() {
     windowHeight = $(window).innerHeight();
     headerHeight = $('header').height() - 10;
-    $('#section-1').css('height', windowHeight - headerHeight);
+    $('#home').css('height', windowHeight - headerHeight);
     $('.bg').css('height', windowHeight);
   };
   setHeight();
-  
+
   $(window).resize(function() {
     setHeight();
   });

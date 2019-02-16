@@ -1,0 +1,18 @@
+---
+title: "Blog | KoBoToolbox"
+isBlog: true
+---
+
+<section class="section section-text-page">
+    <div class="container">
+        <h1>Blog</h1>
+
+        {% for post in site.posts %}
+            {% include post-summary.liquid post=post %}
+        {% endfor %}
+
+        {% if site.posts.size == 0 %}
+            <p>There are no blog posts yet.</p>
+        {% endif %}
+    </div>
+</section>

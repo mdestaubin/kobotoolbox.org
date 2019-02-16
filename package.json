@@ -1,6 +1,15 @@
 {
   "name": "kobotoolbox.org",
+  "private": true,
   "version": "1.0.0",
+  "repository": "https://github.com/kobotoolbox/kobotoolbox.org.git",
+  "bugs": "https://github.com/kobotoolbox/kobotoolbox.org/issues",
+  "scripts": {
+    "styles-build": "gulp sass",
+    "styles-watch": "gulp watch",
+    "jekyll-build": "jekyll build",
+    "jekyll-serve": "jekyll serve --watch --baseurl ''"
+  },
   "dependencies": {
     "hoek": "^5.0.3"
   },
