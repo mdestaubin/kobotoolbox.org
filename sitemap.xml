@@ -1,0 +1,34 @@
+---
+layout: null
+---
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+
+  <!-- home page -->
+  <url>
+    <loc>{{ site.baseurl }}</loc>
+  </url>
+
+  <!-- blog -->
+  <url>
+    <loc>{{ site.baseurl }}/blog</loc>
+  </url>
+
+  <!-- terms -->
+  <url>
+    <loc>{{ site.baseurl }}/terms</loc>
+  </url>
+
+  <!-- privacy -->
+  <url>
+    <loc>{{ site.baseurl }}/privacy</loc>
+  </url>
+
+  <!-- all posts -->
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ site.baseurl }}/blog{{ post.url }}</loc>
+  </url>
+  {% endfor %}
+
+</urlset>

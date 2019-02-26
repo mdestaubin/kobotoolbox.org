@@ -1,0 +1,7 @@
+<article class="post-summary">
+    <time datetime="{{ include.post.date }}" class="post-summary__date">{{ include.post.date | date_to_string }}</time>
+
+    <h2 class="post-summary__title"><a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a></h2>
+
+    <p class="post-summary__summary">{{ include.post.summary }}</p>
+</article>

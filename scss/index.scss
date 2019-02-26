@@ -49,7 +49,6 @@ a {
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
-    margin-bottom: 1em;
 
     &:hover {
       background: darken($blue, 15%);
@@ -76,6 +75,30 @@ p.small {
   font-size: 0.7em;
   margin-top: 2em;
   opacity: 0.7;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+
+  td, th {
+    padding: 0.5em;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td.centered,
+  th.centered {
+    text-align: center;
+  }
+
+  tbody, thead {
+    td, th {
+      border: 1px solid currentColor;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -149,15 +172,19 @@ header {
   width: 100%;
 }
 
-.section {
-  padding: 50px 30px;
-  padding-bottom: 70px;
+section.section {
+  padding: 50px 30px 70px 30px;
   border-bottom: 1px solid #DDD;
 
-  &#section-1 {
+  &:first-of-type {
+    padding-top: 70px;
+  }
+
+  &#home {
     color: white;
     text-align: center;
     position: relative;
+    min-height: 600px;
 
     &:after {
       content: ' ';
@@ -215,6 +242,10 @@ header {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+  &.container--centered {
+    text-align: center;
+  }
 }
 
 #features {
@@ -316,6 +347,10 @@ header {
   }
 }
 
+#blog {
+  background: #fff;
+}
+
 .two-cols {
   @media screen and (max-width: 768px) {
     &.f2 {
@@ -389,6 +424,10 @@ header {
 
 #sign-up {
   background: #FFF;
+
+  a.button {
+      margin-bottom: 1em;
+  }
 
   .try-now {
     text-align: center;
@@ -584,7 +623,7 @@ header {
   text-align: center;
 
   .container {
-    max-width: 600px;
+    max-width: 720px;
   }
 }
 
@@ -616,7 +655,7 @@ footer {
   }
 }
 
-.section-text-page {
+section.section-text-page {
   .container {
     max-width: 900px;
 
@@ -680,5 +719,70 @@ footer {
         }
       }
     }
+  }
+}
+
+.post-title {
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  font-style: italic;
+  margin: 1rem 0;
+  text-align: center;
+  display: block;
+}
+
+.post-related {
+  border-top: 1px dotted #ddd;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.post-related__link {
+  width: calc(50% - 0.5rem);
+
+  &.post-related__link--previous {
+    text-align: left;
+    margin-right: 0.5rem;
+
+    &:only-child {
+      margin-right: 50%;
+    }
+  }
+
+  &.post-related__link--next {
+    text-align: right;
+    margin-left: 0.5rem;
+
+    &:only-child {
+      margin-left: 50%;
+    }
+  }
+}
+
+.post-summary {
+  border-top: 1px dotted #ddd;
+  max-width: $max_width;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  .post-summary__title {
+    font-size: 1.5rem;
+    text-transform: none;
+    margin: 1rem 0.5rem;
+    text-align: left;
+  }
+
+  .post-summary__date {
+    float: right;
+    margin: 1rem 0.5rem 1rem 1rem;
+    font-style: italic;
+    line-height: 1.85rem;
+  }
+
+  .post-summary__summary {
+    margin: 1rem 0.5rem;
   }
 }
