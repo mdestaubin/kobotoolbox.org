@@ -1,0 +1,104 @@
+@import "colors";
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-orientation: right;
+    float: left;
+    background-color:#414453;
+    color: $white;
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $gray;
+      color: black;
+    }
+  }
+}
+
+#khc {
+  background: $whitesmoke;
+}
+
+#committee {
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+
+  h3 {
+    color: $white;
+  }
+
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  img {
+    max-height: 65px;
+    width: auto;
+  }
+}
+
+#purpose {
+  background: $whitesmoke;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+#vision {
+  color: $white;
+  padding: 60px 20px 100px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  img {
+    max-height: 65px;
+    width: auto;
+  }
+}
+
+#members {
+  background: $white;
+}
+
+#join {
+  text-align: center;
+  padding: 60px 20px 160px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+
+  h2, h3, p {
+    color: $white;
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+}

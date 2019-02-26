@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:600");
 
+@import "colors";
 @import "mixins";
 @import "slider";
+@import "khc";
 
 $min_width: 320px;
 $max_width: 1000px;
 $min_font: 14px;
 $max_font: 18px;
-$blue: #2095f3;
-$black: #414453;
-$gray: #a6aaba;
-$green: #52c5d0;
+
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
@@ -256,106 +255,6 @@ section.section {
   background: #F8F8F8;
 }
 
-#khc {
-  background: #F8F8F8; }
-
-#purpose {
-  background: #F8F8F8; }
-
-#members {
-  background: #FFF; }
-
-#committee {
-  text-align: center;
-  padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.8);
-  border-bottom: none;
-
-  h3 {
-    color: white;
-  }
-
-  a {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  img {
-    max-height: 65px;
-    width: auto;
-  }
-}
-
-#vision {
-  text-align: center;
-  padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.8);
-  border-bottom: none;
-
-  h2, h3, h4, p {
-    color: white;
-  }
-
-  ul {
-    text-align: left;
-  }
-
-  h3 {
-    margin-top: 50px;
-  }
-
-  h4 {
-    text-align: left;
-  }
-
-  a {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  img {
-    max-height: 65px;
-    width: auto;
-  }
-}
-
-#join {
-  text-align: center;
-  padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.8);
-  border-bottom: none;
-
-  h2, h3, p {
-    color: white;
-  }
-}
-
-.topnav {
-  overflow: hidden;
-  position: fixed;
-
-  ul {
-    list-style: none;
-  }
-
-  a {
-    text-orientation: right;
-    float: left;
-    background-color:#414453;
-    color: white;
-    padding: 10px 8px;
-    text-decoration: none;
-    font-size: 16px;
-
-    &:hover {
-      background-color: #ddd;
-      color: black;
-    }
-  }
-}
-
 #blog {
   background: #fff;
 }
@@ -435,7 +334,7 @@ section.section {
   background: #FFF;
 
   a.button {
-      margin-bottom: 1em;
+    margin-bottom: 1em;
   }
 
   .try-now {
