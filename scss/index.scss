@@ -163,13 +163,17 @@ header {
 }
 
 .bg {
-  background: url("../images/hhi.jpg") center center no-repeat;
+  background: url("../images/front_background2.jpg") center center no-repeat;
   background-size: cover;
   position: fixed;
   z-index: -1;
   top: 0px;
   left: 0px;
   width: 100%;
+
+  &.bg--hhi {
+    background-image: url("../images/hhi.jpg");
+  }
 }
 
 section.section {
@@ -330,6 +334,11 @@ section.section {
 
 .topnav {
   overflow: hidden;
+  position: fixed;
+
+  ul {
+    list-style: none;
+  }
 
   a {
     text-orientation: right;
@@ -340,7 +349,7 @@ section.section {
     text-decoration: none;
     font-size: 16px;
 
-    :hover {
+    &:hover {
       background-color: #ddd;
       color: black;
     }

@@ -189,8 +189,7 @@ a {
     padding-top: 10px;
     text-decoration: none;
     display: inline-block;
-    border-radius: 5px;
-    margin-bottom: 1em; }
+    border-radius: 5px; }
     a.button:hover {
       background: #0a6dbc;
       color: white; }
@@ -210,6 +209,19 @@ p.small {
   font-size: 0.7em;
   margin-top: 2em;
   opacity: 0.7; }
+
+table {
+  border-collapse: collapse;
+  font-size: 0.9em; }
+  table td, table th {
+    padding: 0.5em; }
+  table th {
+    text-align: left; }
+  table td.centered,
+  table th.centered {
+    text-align: center; }
+  table tbody td, table tbody th, table thead td, table thead th {
+    border: 1px solid currentColor; }
 
 @media screen and (max-width: 767px) {
   .hide-mobile {
@@ -255,24 +267,28 @@ header {
       header ul#nav {
         padding: 24px 15px; } }
 
-.bg{
-  background: url("../images/hhi.jpg") center center no-repeat;
+.bg {
+  background: url("../images/front_background2.jpg") center center no-repeat;
   background-size: cover;
   position: fixed;
   z-index: -1;
   top: 0px;
   left: 0px;
   width: 100%; }
+  .bg.bg--hhi {
+    background-image: url("../images/hhi.jpg"); }
 
-.section {
-  padding: 50px 30px;
-  padding-bottom: 70px;
+section.section {
+  padding: 50px 30px 70px 30px;
   border-bottom: 1px solid #DDD; }
-  .section#section-1 {
+  section.section:first-of-type {
+    padding-top: 70px; }
+  section.section#home {
     color: white;
     text-align: center;
-    position: relative; }
-    .section#section-1:after {
+    position: relative;
+    min-height: 600px; }
+    section.section#home:after {
       content: ' ';
       background: rgba(65, 68, 83, 0.75);
       background: linear-gradient(to bottom, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
@@ -281,36 +297,38 @@ header {
       position: absolute;
       left: 0px;
       top: 0px; }
-    .section#section-1 .container {
+    section.section#home .container {
       padding-top: 200px;
       position: relative;
       z-index: 2; }
       @media screen and (min-width: 769px) {
-        .section#section-1 .container {
+        section.section#home .container {
           padding-top: 300px; } }
-    .section#section-1 h1 {
+    section.section#home h1 {
       text-transform: uppercase;
       padding: 1em 2em;
       font-size: 2.5rem; }
     @media screen and (max-width: 550px) {
-      .section#section-1 h1 {
+      section.section#home h1 {
         padding: 1em 0;
         font-size: 2.2rem; } }
-  .section h2 {
+  section.section h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
     margin-top: 1em; }
-  .section h3 {
+  section.section h3 {
     text-transform: uppercase;
     font-size: 1.4em;
     margin-top: 0px; }
-    .section h3 span {
+    section.section h3 span {
       border-bottom: 1px dotted #52c5d0; }
 
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+  .container.container--centered {
+    text-align: center; }
 
 #features {
   background: #F8F8F8; }
@@ -324,7 +342,7 @@ header {
 #members {
   background: #FFF; }
 
-#committee{
+#committee {
   text-align: center;
   padding: 40px 20px 80px 20px;
   background: rgba(65, 68, 83, 0.8);
@@ -339,7 +357,7 @@ header {
     max-height: 65px;
     width: auto; }
 
-#vision{
+#vision {
   text-align: center;
   padding: 40px 20px 80px 20px;
   background: rgba(65, 68, 83, 0.8);
@@ -347,13 +365,11 @@ header {
   #vision h2, #vision h3, #vision h4, #vision p {
     color: white; }
   #vision ul {
-    text-align: left;
-  }
+    text-align: left; }
   #vision h3 {
     margin-top: 50px; }
   #vision h4 {
-  text-align: left;
-  }
+    text-align: left; }
   #vision a {
     display: inline-block;
     margin-right: 10px;
@@ -372,20 +388,23 @@ header {
 
 .topnav {
   overflow: hidden;
-}
-.topnav a {
-  text-orientation: right;
-  float: left;
-  background-color:#414453; 
-  color: white;
-  padding: 10px 8px;
-  text-decoration: none;
-  font-size: 16px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+  position: fixed; }
+  .topnav ul {
+    list-style: none; }
+  .topnav a {
+    text-orientation: right;
+    float: left;
+    background-color: #414453;
+    color: white;
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 16px; }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black; }
+
+#blog {
+  background: #fff; }
 
 @media screen and (max-width: 768px) {
   .two-cols.f2 {
@@ -434,6 +453,8 @@ header {
 
 #sign-up {
   background: #FFF; }
+  #sign-up a.button {
+    margin-bottom: 1em; }
   #sign-up .try-now {
     text-align: center;
     margin-bottom: 0px;
@@ -566,7 +587,7 @@ header {
   background: #F8F8F8;
   text-align: center; }
   #help .container {
-    max-width: 800px; }
+    max-width: 720px; }
 
 footer {
   background: rgba(65, 68, 83, 0.9);
@@ -587,13 +608,13 @@ footer {
         color: white;
         opacity: 1; }
 
-.section-text-page .container {
+section.section-text-page .container {
   max-width: 900px; }
-  .section-text-page .container h1 {
+  section.section-text-page .container h1 {
     text-transform: uppercase;
     padding-top: 50px;
     text-align: center; }
-  .section-text-page .container h3 {
+  section.section-text-page .container h3 {
     margin-top: 2em; }
 
 #examples {
@@ -632,3 +653,49 @@ footer {
           display: block; }
         #examples .group-examples .example-item a:hover, #examples .group-examples .example-item a:hover span {
           opacity: 1; }
+
+.post-title {
+  margin-bottom: 1rem; }
+
+.post-date {
+  font-style: italic;
+  margin: 1rem 0;
+  text-align: center;
+  display: block; }
+
+.post-related {
+  border-top: 1px dotted #ddd;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: flex; }
+
+.post-related__link {
+  width: calc(50% - 0.5rem); }
+  .post-related__link.post-related__link--previous {
+    text-align: left;
+    margin-right: 0.5rem; }
+    .post-related__link.post-related__link--previous:only-child {
+      margin-right: 50%; }
+  .post-related__link.post-related__link--next {
+    text-align: right;
+    margin-left: 0.5rem; }
+    .post-related__link.post-related__link--next:only-child {
+      margin-left: 50%; }
+
+.post-summary {
+  border-top: 1px dotted #ddd;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0; }
+  .post-summary .post-summary__title {
+    font-size: 1.5rem;
+    text-transform: none;
+    margin: 1rem 0.5rem;
+    text-align: left; }
+  .post-summary .post-summary__date {
+    float: right;
+    margin: 1rem 0.5rem 1rem 1rem;
+    font-style: italic;
+    line-height: 1.85rem; }
+  .post-summary .post-summary__summary {
+    margin: 1rem 0.5rem; }
