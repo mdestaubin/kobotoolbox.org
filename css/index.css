@@ -315,45 +315,50 @@ header {
 #features {
   background: #F8F8F8; }
 
-#kobo {
+#khc {
   background: #F8F8F8; }
-  #kobo .video {
-    position: relative;
-    width: 100%;
-    margin: 50px auto;
-    height: 0;
-    padding-bottom: 56.25%; }
-  #kobo iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border: 0px; }
+
+#purpose {
+  background: #F8F8F8; }
 
 #members {
   background: #FFF; }
 
-#khc{
+#committee{
   text-align: center;
   padding: 40px 20px 80px 20px;
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none; }
-  #khc h2, #khc h3, #khc h4, #khc p {
+  #committee h3 {
     color: white; }
-  #khc ul {
-    text-align: left;
-  }
-  #khc h3 {
-    margin-top: 50px; }
-  #khc h4 {
-  text-align: left;
-  }
-  #khc a {
+  #committee a {
     display: inline-block;
     margin-right: 10px;
     margin-left: 10px; }
-  #khc img {
+  #committee img {
+    max-height: 65px;
+    width: auto; }
+
+#vision{
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none; }
+  #vision h2, #vision h3, #vision h4, #vision p {
+    color: white; }
+  #vision ul {
+    text-align: left;
+  }
+  #vision h3 {
+    margin-top: 50px; }
+  #vision h4 {
+  text-align: left;
+  }
+  #vision a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px; }
+  #vision img {
     max-height: 65px;
     width: auto; }
 
@@ -364,6 +369,23 @@ header {
   border-bottom: none; }
   #join h2, #join h3, #join p {
     color: white; }
+
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+  text-orientation: right;
+  float: left;
+  background-color:#414453; 
+  color: white;
+  padding: 10px 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
 @media screen and (max-width: 768px) {
   .two-cols.f2 {
