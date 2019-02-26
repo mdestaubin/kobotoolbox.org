@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>KoBoToolbox | Data Collection Tools for Challenging Environments</title>
     <meta name="description" content="KoBoToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="/css/normalize.css" rel="stylesheet" media="all">
-    <link href="/css/index.css" rel="stylesheet" media="all">
+    <link href="../css/normalize.css" rel="stylesheet" media="all">
+    <link href="../css/index.css" rel="stylesheet" media="all">
     <!--[if lt IE 9]><script src="/js/html5shiv-printshiv.js" media="all"></script><![endif]-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
-    <script type="text/javascript" src="/js/responsiveslides.min.js"></script>
-    <script type="text/javascript" src="/js/kobo.js"></script>
+    <script type="text/javascript" src="../js/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="../js/kobo.js"></script>
 </head>
-
 <body>
     <div class="bg"></div>
     <header role="banner">
         <h1><a href="https://www.kobotoolbox.org/">KoBoToolbox</a></h1>
         <nav role="navigation">
             <ul id="nav">
-                <li class="hide-mobile"><a href="./#section-1">Home</a></li>
-                <li class="hide-mobile"><a href="./#kobo">KoBoToolbox</a></li>
-                <li class="hide-mobile"><a href="./#khc">Humanitarian Committee</a></li>
-                <li class="hide-mobile"><a href="./#members">Membership</a></li>
-                <li><a href="./#join">Join</a></li>
+                <li class="hide-mobile"><a href="#section-1">Home</a></li>
+                <li class="hide-mobile"><a href="#features">Features</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+                <li class="hide-mobile"><a href="#about">About</a></li>
+                <li class="hide-mobile"><a href="#help" target="_blank">Help</a></li>
             </ul>
+            <div class="topnav" style="position: fixed;">
+                <ul>
+                    <a href="#khc">About</a>
+                    <a href="#purpose">Purpose</a>
+                    <a href="#vision">Vision & Values</a>
+                    <a href="#members">Membership</a>
+                </ul>
+            </div>
         </nav>
     </header>
     <main role="main">
@@ -45,15 +51,33 @@
                 </div>
             </div>
         </div>
-
-        <div id="kobo" class="section section-text-page">
+        <div id="khc" class="section section-text-page">
             <div class="container">
-                <h2 style="text-align: center">About KoBoToolbox</h2>
-                <h4>Purpose</h4>
-                <p>Since 2014,<a href="https://www.kobotoolbox.org/">KoBoToolbox</a> has experienced a rapid growth and adoption among the humanitarian community, making it the most widely used tool for primary data collection by humanitarian actors today. The purpose of this document is to establish
-                    the scope, purpose and structure of the KoBoToolbox Humanitarian Committee (KHC).</p>
-                <p>The KHC will inform the development of KoBoToolbox for humanitarian use, including overall strategy and vision on technological issues, community development, integration and fundraising to ensure the long-term sustainability of the tools
-                    and value for humanitarian users.</p>
+                <ul>
+                    <h2>About</h2>
+                    <p>The KoBoToolbox Humanitarian Committee (KHC) is created with the purpose of establishing a pooled funding and decision-making mechanism to support the long-term sustainability of KoBoToolbox and related maintenance and support services for the entire humanitarian sector. The purpose of the KoBoToolbox Humanitarian Committee is to support the independence of the tools, both financially and through strategic decision-making.</p>
+                    <p>The specific functions of the KoBoToolbox Humanitarian Committee are to: </p>
+                    <p>1. Ensure that software tools and services are aligned to the core values of the tools and the needs of the humanitarian community</p>
+                    <p>2. Secure funding through engagement with potential partners or donors and leverage resources and network to assist the project in achieving its outcomes</p>
+                    <p>3. Provide advice and guidance on business issues facing KoBoToolbox, such as outreach and marketing to additional humanitarian organizations</p>
+                    <p>4. Recommend additional feature development and/or software improvements using pool funding generated by membership fees</p>
+                </ul>
+            </div>
+        </div>
+        <div id="committee" class="section">
+            <div class="container">
+                <h3>Committee Members</h3>
+                <br>
+                <a href="https://hhi.harvard.edu"><img src="../images/logos/HHI.png" /></a>
+                <a href="http://www.unocha.org"><img src="../images/logos/ocha.png" /></a>
+                <a href="http://www.unhcr.org"><img src="../images/logos/unhcr.png" /></a>
+            </div>
+        </div>
+        <div id="purpose" class="section section-text-page">
+            <div class="container">
+                <h2 style="text-align: center">Purpose</h2>
+                <p>Since 2014, KoBoToolbox has experienced a rapid growth and adoption among the humanitarian community, making it the most widely used tool for primary data collection by humanitarian actors today. The purpose of this document is to establish the scope, purpose and structure of the KoBoToolbox Humanitarian Committee (KHC).</p>
+                <p>The KHC will inform the development of KoBoToolbox for humanitarian use, including overall strategy and vision on technological issues, community development, integration and fundraising to ensure the long-term sustainability of the tools and value for humanitarian users.</p>
                 <p>The KoBoToolbox Humanitarian Committee will help create a more coordinated approach for the development of KoBoToolbox as a free and open source data collection services in support of all humanitarians. Specific objectives are to:</p>
                 <ul>
                     <p>1. Scale services to meet the growing demand for user support, training, feature development and self-hosted solutions Open the partnership and Involve
@@ -65,21 +89,12 @@
                     <p>4. Jointly identify new priority features and changes to existing tools that are most urgently required by humanitarian field needs.
                     </p>
                 </ul>
-                <div class="video">
-                    <iframe allowfullscreen="" src="https://www.youtube.com/embed/4PNtT51h3CQ"></iframe>
-                </div>
-                <h4>KoBoToolbox</h4>
-                <p>KoBoToolbox was founded in 2005 by Phuong Pham and Patrick Vinck. They joined the Harvard Humanitarian Initiative (HHI) in 2011 and Brigham and Women’s Hospital in 2012, where they now maintain KoBoToolbox as an open-source project. It
-                    includes software engineers, designers, user support agents, and other specialists in several countries, most of whom have deep personal experience with field data collection in humanitarian crises and other challenging environments.
-                    </p>
-                <p>With funding from USAID, UNOCHA and IRC partnered with KoBoToolbox to take the existing tool and transform it into a comprehensive platform for humanitarian data collection. The resulting platform was launched in 2014 as a free tool with
-                    unlimited data collection and storage for humanitarian actors (kobo.humanitarianresponse.info).</p>
-                <p>As a lead partner, UNOCHA has worked closely in partnership with HHI to promote the platform to humanitarian users, offering it as a potential solution to harmonized needs assessments and promoting an evidence-based approach to humanitarian
-                    programming. OCHA has also channeled funding towards the project and allocated dedicated internal resources to manage the project for the humanitarian community. These funds have been used primarily to continuously develop features
-                    based on user feedback, continue free remote user support, establish a training platform (<a href="https://www.training.kobotoolbox.org">training.kobotoolbox.org</a>) and to sustain the public KoBoToolbox server for humanitarians.</p>
-                <p>KoBoToolbox is also supported through grants and contracts from private foundations, philanthropists, United Nations agencies, and non-governmental organizations.</p>
-                <p>The KoBoToolbox team which is responsible for the maintenance and development of KoBoToolbox is composed of researchers and programmers affiliated with the Harvard Humanitarian Initiative, the Brigham and Women’s Hospital, and Kweyo LL.</p>
-                <h4>Vision and Values</h4>
+            </div>
+        </div>
+        <div id="vision" class="section">
+            <div class="container">
+                <br>
+                <h2>Vision and Values</h2>
                 <p>KoBoToolbox for use in humanitarian emergencies aims to:</p>
                 <ul>
                     <p>1. Enable high-quality humanitarian decision making and coordination through rapid and reliable primary data collection and analysis.</p>
@@ -90,51 +105,20 @@
                 <ul>
                     <p>1. A platform developed and governed for humanitarians by humanitarians for the benefit of the wider humanitarian community and not just for a specific agency or organization.</p>
                     <p>2. A platform that is free, open source, and fully accessible for all humanitarian users including basic support, ensuring that even the smallest local NGOs have access to quality tools and services.</p>
-                    <p>3. Use open form-building and data collection standards to ensure compatibility with other tools and guarantee the flexibility to customize the platform if necessary, while minimizing fragmentation of tools, and building transferable
-                        skills and mutual support.</p>
+                    <p>3. Use open form-building and data collection standards to ensure compatibility with other tools and guarantee the flexibility to customize the platform if necessary, while minimizing fragmentation of tools, and building transferable skills and mutual support.</p>
                     <p>4. Enable the reliable collection, management, and sharing of data to enhance the quality of humanitarian programming and promote evidence-based and harmonized approaches within the humanitarian community.</p>
                 </ul>
                 <br>
             </div>
         </div>
-        <div id="khc" class="section">
-            <div class="container">
-                <br>
-                <h2>About the KoBoToolbox Humanitarian Committee</h2>
-                <ul>
-                    <h4>Role and Function</h4>
-                    <p>The KoBoToolbox Humanitarian Committee (KHC) is created with the purpose of establishing a pooled funding and decision-making mechanism to support the long-term sustainability of KoBoToolbox and related maintenance and support services
-                        for the entire humanitarian sector. The purpose of the KoBoToolbox Humanitarian Committee is to support the independence of the tools, both financially and through strategic decision-making.</p>
-                    <p>The specific functions of the KoBoToolbox Humanitarian Committee are to: </p>
-                    <p>1. Ensure that software tools and services are aligned to the core values of the tools and the needs of the humanitarian community</p>
-                    <p>2. Secure funding through engagement with potential partners or donors and leverage resources and network to assist the project in achieving its outcomes</p>
-                    <p>3. Provide advice and guidance on business issues facing KoBoToolbox, such as outreach and marketing to additional humanitarian organizations</p>
-                    <p>4. Recommend additional feature development and/or software improvements using pool funding generated by membership fees</p>
-                </ul>
-                <br>
-                <h3>Committee Members</h3>
-                <br>
-                <a href="https://hhi.harvard.edu"><img src="../images/logos/HHI.png" /></a>
-                <a href="http://www.unocha.org"><img src="../images/logos/ocha.png" /></a>
-                <a href="http://www.unhcr.org"><img src="../images/logos/unhcr.png" /></a>
-            </div>
-        </div>
         <div id="members" class="section section-text-page">
             <div class="container">
-                <br>
-                <h2>Membership</h2>
-                <p>The KoBoToolbox Humanitarian Committee shall consist of one representative from each member organization. Invited members may be selected based on unique non-financial contribution equivalent to membership fees at the discretion of the
-                    KoBoToolbox technical team.</p>
-                <p><b>Term: </b>A term of membership shall last for one year based on membership fee. Terms shall be renewable annually with a grace period of 30 days. Terms will begin on September 1st or on the date that the membership fee is received at
-                    the request of the contributor. </p>
+                <h2>Membership Details</h2>
+                <p>The KoBoToolbox Humanitarian Committee shall consist of one representative from each member organization. Invited members may be selected based on unique non-financial contribution equivalent to membership fees at the discretion of the KoBoToolbox technical team.</p>
+                <p><b>Term: </b>A term of membership shall last for one year based on membership fee. Terms shall be renewable annually with a grace period of 30 days. Terms will begin on September 1st or on the date that the membership fee is received at the request of the contributor. </p>
                 <p><b>Officers: </b>The Committee will have a chair and vice chair appointed every two years. KoBoToolbox will provide a secretary for record purposes.</p>
-                <p><b>Meetings: </b>The KoBoToolbox Humanitarian Committee will meet at least twice a year. The sessions will be held primarily remotely due to the wide geographic diversity of members, supported by a relevant platform (e.g. WebEx). Written
-                    notices of upcoming meetings will be e-mailed to members at least ten days before a meeting. Minutes will be taken by KoBoToolbox and made available to all participants after each meeting. Additional meetings will be held at the request
-                    of at least 3 members. The quorum for the meetings must include at least a half (50%) of members, as well as a KoBoToolbox representative. Members can send proxies to the meeting to participate on their behalf. Proxies will have the
-                    rights to participate in the discussions and can vote on behalf of the member. Decisions are taken with a simple majority vote amongst participating members. As a standing agenda item, the minutes and recommendations of previous KoBoToolbox
-                    Humanitarian Advisory Board meetings will be presented and discussed.</p>
-                <p><b>Membership Fees: </b>Members of the KoBoToolbox Humanitarian Committee will pay a membership fee annually. All contributions will go toward a pooled fund managed by the Kobotoolbox technical team which will provide regular and transparent
-                    updates on funding received, current expenditures, and funding available to be allocated by members for additional software development.</p>
+                <p><b>Meetings: </b>The KoBoToolbox Humanitarian Committee will meet at least twice a year. The sessions will be held primarily remotely due to the wide geographic diversity of members, supported by a relevant platform (e.g. WebEx). Written notices of upcoming meetings will be e-mailed to members at least ten days before a meeting. Minutes will be taken by KoBoToolbox and made available to all participants after each meeting. Additional meetings will be held at the request of at least 3 members. The quorum for the meetings must include at least a half (50%) of members, as well as a KoBoToolbox representative. Members can send proxies to the meeting to participate on their behalf. Proxies will have the rights to participate in the discussions and can vote on behalf of the member. Decisions are taken with a simple majority vote amongst participating members. As a standing agenda item, the minutes and recommendations of previous KoBoToolbox Humanitarian Advisory Board meetings will be presented and discussed.</p>
+                <p><b>Membership Fees: </b>Members of the KoBoToolbox Humanitarian Committee will pay a membership fee annually. All contributions will go toward a pooled fund managed by the Kobotoolbox technical team which will provide regular and transparent updates on funding received, current expenditures, and funding available to be allocated by members for additional software development.</p>
                 <p>The membership fees will be assessed annually. Initial fees are proposed as follow:</p>
                 <table style="border: none; border-collapse: collapse;">
                     <tbody>
@@ -216,14 +200,10 @@
                 <p>Membership in the KoBoToolbox Humanitarian Committee provides several benefits:</p>
                 <ul>
                     <p>1. Decision making: Members will have significant influence and a direct vote to decide on which new features and improvements should be developed by the KoBoToolbox technical team, based on available resources (see 2.4.).</p>
-                    <p>2. Each member will receive priority basic user support by KoBoToolbox professional staff, as described in Annex I. Each member will be entitled to user support up to the number of hours of its membership tier, as listed above. The
-                        support will be provided by dedicated support agents for any technical issues related to the use of KoBoToolbox, such as form creation, data access questions, general usability queries, linking to other tools, etc.</p>
-                    <p>3. Additional paid user support options will be available to members, including advanced user support such as support for deployments, systems administration, and similar issues provided directly by relevant developers and/or System
-                        Administrators at KoBoToolbox.</p>
-                    <p>4. Visibility: through their support, members will demonstrate their commitment and support to open-source solutions that benefit the entire community of humanitarian actors, including numerous local and community-based organizations
-                        who would not otherwise have access to similar tools and support. Members will be recognized on the highly visited KoboToolbox website and in publications</p>
-                    <p>5. Coordination: The network will leverage all of the members contribution to achieve major advancement that would not be otherwise be funded by single contributions. This coordinated approach ensures that KoBoToolbox is firmly developed
-                        by all humanitarians and for all humanitarians. </p>
+                    <p>2. Each member will receive priority basic user support by KoBoToolbox professional staff, as described in Annex I. Each member will be entitled to user support up to the number of hours of its membership tier, as listed above. The support will be provided by dedicated support agents for any technical issues related to the use of KoBoToolbox, such as form creation, data access questions, general usability queries, linking to other tools, etc.</p>
+                    <p>3. Additional paid user support options will be available to members, including advanced user support such as support for deployments, systems administration, and similar issues provided directly by relevant developers and/or System Administrators at KoBoToolbox.</p>
+                    <p>4. Visibility: through their support, members will demonstrate their commitment and support to open-source solutions that benefit the entire community of humanitarian actors, including numerous local and community-based organizations who would not otherwise have access to similar tools and support. Members will be recognized on the highly visited KoboToolbox website and in publications</p>
+                    <p>5. Coordination: The network will leverage all of the members contribution to achieve major advancement that would not be otherwise be funded by single contributions. This coordinated approach ensures that KoBoToolbox is firmly developed by all humanitarians and for all humanitarians. </p>
                 </ul>
                 <h4>Financial Model of the KHC</h4>
                 <p>Membership fees will cover three elements in a sequential manner, depending on the availability of funds. The maintenance costs and user support costs will be supported by additional external funding.
@@ -231,44 +211,33 @@
                 <ul>
                     <b>
               <p>1. Maintenance of the KoBoToolbox software and service
-            </b> (security updates, bug fixes, operating costs like server…): A portion of each member’s fees will cover this fixed expenditure of software engineers maintaining the stability of both the software and the public platform
-                    for the benefit of both the members and the wider community, as well as general running costs such as the support platform and server costs. This part of the expenditure will also be covered by other non-earmarked funding raised through
-                    different channels (with members’ help wherever possible).</p>
+            </b> (security updates, bug fixes, operating costs like server…): A portion of each member’s fees will cover this fixed expenditure of software engineers maintaining the stability of both the software and the public platform for the benefit of both the members and the wider community, as well as general running costs such as the support platform and server costs. This part of the expenditure will also be covered by other non-earmarked funding raised through different channels (with members’ help wherever possible).</p>
                     <b>
               <p>2. Priority user support 
-            </b> benefiting individuals within the member’s organization: This covers support agents as well as the user support platform. The financial proportion allocated for this part is variable, meaning that as more members join
-                    the KHC, more user agents will be added to the team. This part is directly covered by each member’s fees.</p>
+            </b> benefiting individuals within the member’s organization: This covers support agents as well as the user support platform. The financial proportion allocated for this part is variable, meaning that as more members join the KHC, more user agents will be added to the team. This part is directly covered by each member’s fees.</p>
                     <b>
               <p>3. Feature development and general improvements: 
-            </b> Once fixed costs within (1) and (2) are covered, all remaining funds are allocated by the KHC towards platform improvements and/or new feature developments to be implemented by the KoBoToolbox technical team under
-                    the direction of the KHC. This will follow the following procedure:</p>
+            </b> Once fixed costs within (1) and (2) are covered, all remaining funds are allocated by the KHC towards platform improvements and/or new feature developments to be implemented by the KoBoToolbox technical team under the direction of the KHC. This will follow the following procedure:</p>
                     <ul>
                         <p>a. A KHC member proposes changes (i.e. new features or software improvements), including exact specifications, user stories, and other relevant details.
                         </p>
-                        <p>b. If a second member seconds the proposed changes, the KoBoToolbox team will work with the member(s) to refine exact specifications. The KoBoToolbox team will then assess changes requested in terms of 1) the technical feasibility,
-                            and 2) the costs for implementing the changes.
+                        <p>b. If a second member seconds the proposed changes, the KoBoToolbox team will work with the member(s) to refine exact specifications. The KoBoToolbox team will then assess changes requested in terms of 1) the technical feasibility, and 2) the costs for implementing the changes.
                         </p>
                         <p>c. This cost and feasibility assessment will be provided back to the KHC for each proposed feature, including if a proposed feature is not technically feasible or in conflict with the values outlined in section 1 above.
                         </p>
-                        <p>d. Based on these assessments, members will vote at a KHC meeting to decide on which of those changes should be implemented and in what priority (assuming sufficient funds are available and the KoBoToolbox team has deemed technically
-                            feasible).
+                        <p>d. Based on these assessments, members will vote at a KHC meeting to decide on which of those changes should be implemented and in what priority (assuming sufficient funds are available and the KoBoToolbox team has deemed technically feasible).
                         </p>
                         <p>e. Exact implementation details (such as staffing, selection of software libraries, etc.) will be at the sole discretion of the KoBoToolbox team.
                         </p>
                     </ul>
                 </ul>
-                <h4>Annex I: User support terms</h4>
-                <p>The following section specifies how priority user support will be provided to KHC member organizations and their respective users. Dependent on a sufficient number of members, more user support agents will be hired to eventually provide
-                    coverage of all major time zones as well as on weekends. Time spent on user support will be tracked transparently for each member. </p>
+                <h4>User support terms</h4>
+                <p>The following section specifies how priority user support will be provided to KHC member organizations and their respective users. Dependent on a sufficient number of members, more user support agents will be hired to eventually provide coverage of all major time zones as well as on weekends. Time spent on user support will be tracked transparently for each member. </p>
                 <ul>
-                    <p><b>1. Inclusion: </b>Users will be included in a KHC member’s priority support inbox based on official email address domains as well as or in addition to manual lists provided to KoBoToolbox by each KHC member for additional users
-                        (e.g. consultants who do not own a relevant email address belonging to that organization). </p>
-                    <p><b>2. Response: </b>Users will be included in a KHC member’s priority support inbox based on official email address domains as well as or in addition to manual lists provided to KoBoToolbox by each KHC member for additional users (e.g.
-                        consultants who do not own a relevant email address belonging to that organization). </p>
-                    <p><b>3. Support content coverage </b>Users will be included in a KHC member’s priority support inbox based on official email address domains as well as or in addition to manual lists provided to KoBoToolbox by each KHC member for additional
-                        users (e.g. consultants who do not own a relevant email address belonging to that organization). </p>
-                    <p><b>4. Tracking/reporting: </b>Users will be included in a KHC member’s priority support inbox based on official email address domains as well as or in addition to manual lists provided to KoBoToolbox by each KHC member for additional
-                        users (e.g. consultants who do not own a relevant email address belonging to that organization).</p>
+                    <p><b>1. Inclusion: </b>Users will be included in a KHC member’s priority support inbox based on official email address domains as well as or in addition to manual lists provided to KoBoToolbox by each KHC member for additional users (e.g. consultants who do not own a relevant email address belonging to that organization). </p>
+                    <p><b>2. Response: </b>Users will be included in a KHC member’s priority support inbox based on official email address domains as well as or in addition to manual lists provided to KoBoToolbox by each KHC member for additional users (e.g. consultants who do not own a relevant email address belonging to that organization). </p>
+                    <p><b>3. Support content coverage </b>Users will be included in a KHC member’s priority support inbox based on official email address domains as well as or in addition to manual lists provided to KoBoToolbox by each KHC member for additional users (e.g. consultants who do not own a relevant email address belonging to that organization). </p>
+                    <p><b>4. Tracking/reporting: </b>Users will be included in a KHC member’s priority support inbox based on official email address domains as well as or in addition to manual lists provided to KoBoToolbox by each KHC member for additional users (e.g. consultants who do not own a relevant email address belonging to that organization).</p>
                     <p><b>5. Bug prioritization: </b>Technical issues with KoBoToolbox software (bugs) will be added to GitHub and classified according to four levels and fixed in order of priority, as described below:</p>
                     <ul>
                         <li>
@@ -292,7 +261,8 @@
                 <br>
                 <h2>interested in joining the<br>KoBoToolbox Humanitarian Committee?</h2>
                 <p class="centered">To learn more about joining the KoBoToolbox Humanitarian Committee and talk directly with someone from our team, please send us an email that briefly describes your organization and it's intent to join the KHC.</p>
-                <br><br>
+                <br>
+                <br>
                 <a class="button" a href="mailto:info@kobotoolbox.org?Subject=KoBoToolbox%20Humanitarian%20Committee">Email Us</a>
             </div>
         </div>
