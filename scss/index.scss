@@ -140,7 +140,7 @@ header {
 }
 
 .bg {
-  background: url("../images/front_background2.jpg") center center no-repeat;
+  background: url("../images/hhi.jpg") center center no-repeat;
   background-size: cover;
   position: fixed;
   z-index: -1;
@@ -219,6 +219,101 @@ header {
 
 #features {
   background: #F8F8F8;
+}
+
+#khc {
+  background: #F8F8F8; }
+
+#purpose {
+  background: #F8F8F8; }
+
+#members {
+  background: #FFF; }
+
+#committee {
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+
+  h3 {
+    color: white;
+  }
+
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  img {
+    max-height: 65px;
+    width: auto;
+  }
+}
+
+#vision {
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+
+  h2, h3, h4, p {
+    color: white;
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+
+  h4 {
+    text-align: left;
+  }
+
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  img {
+    max-height: 65px;
+    width: auto;
+  }
+}
+
+#join {
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+
+  h2, h3, p {
+    color: white;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+
+  a {
+    text-orientation: right;
+    float: left;
+    background-color:#414453;
+    color: white;
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 16px;
+
+    :hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
 }
 
 .two-cols {
@@ -470,7 +565,7 @@ header {
         padding-top: 0.5em;
       }
 
-      b { 
+      b {
         white-space: nowrap
       }
 
