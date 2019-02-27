@@ -356,7 +356,7 @@ table {
     background-image: url("../images/hhi.jpg"); }
 
 section.section {
-  padding: 50px 30px 70px 30px;
+  padding: 80px 30px;
   border-bottom: 1px solid #DDD; }
   section.section:first-of-type {
     padding-top: 70px; }
@@ -473,7 +473,6 @@ section.section {
 
 #partners {
   text-align: center;
-  padding: 40px 20px 80px 20px;
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none; }
   #partners h2, #partners h3 {
@@ -569,7 +568,7 @@ section.section {
 
 footer {
   background: rgba(65, 68, 83, 0.9);
-  padding: 50px 20px;
+  padding: 80px 30px;
   text-align: center;
   color: white; }
   footer p {
@@ -627,7 +626,6 @@ section.section-text-page .container {
 
 #examples {
   text-align: center;
-  padding: 40px 20px 80px 20px;
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none; }
   #examples h2, #examples h3, #examples p {

@@ -121,7 +121,7 @@ table {
 }
 
 section.section {
-  padding: 50px 30px 70px 30px;
+  padding: 80px 30px;
   border-bottom: 1px solid #DDD;
 
   &:first-of-type {
@@ -297,8 +297,7 @@ section.section {
 
 #partners {
   text-align: center;
-  padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.8);
+  background: rgba($black, 0.8);
   border-bottom: none;
 
   h2, h3 {
@@ -363,7 +362,7 @@ section.section {
     max-width: 450px;
     display: flex;
     margin: 40px auto;
-    background: rgba(65, 68, 83, 0.05);
+    background: rgba($black, 0.05);
     padding: 0px 10px 0px 20px;
     flex-wrap: wrap;
 
@@ -440,8 +439,8 @@ section.section {
 }
 
 footer {
-  background: rgba(65, 68, 83, 0.9);
-  padding: 50px 20px;
+  background: rgba($black, 0.9);
+  padding: 80px 30px;
   text-align: center;
   color: white;
 
@@ -475,8 +474,8 @@ section.section-slider {
 
   &:after {
     content: ' ';
-    background: rgba(65, 68, 83, 0.75);
-    background: linear-gradient(to bottom, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
+    background: rgba($black, 0.75);
+    background: linear-gradient(to bottom, rgba($black, 0.9) 0%, rgba($black, 0.5) 100%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -526,8 +525,7 @@ section.section-text-page {
 
 #examples {
   text-align: center;
-  padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.8);
+  background: rgba($black, 0.8);
   border-bottom: none;
 
   h2, h3, p {
