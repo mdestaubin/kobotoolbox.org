@@ -3,13 +3,13 @@
 @import "colors";
 @import "mixins";
 @import "slider";
+@import "header";
 @import "khc";
 
 $min_width: 320px;
 $max_width: 1000px;
 $min_font: 14px;
 $max_font: 18px;
-
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
@@ -106,61 +106,6 @@ table {
   }
 }
 
-header {
-  position: fixed;
-  height: 70px;
-  background: #414453;
-  color: white;
-  width: 100%;
-  display: flex;
-  z-index: 999;
-
-  h1 {
-    flex-grow: 1;
-    margin: 15px 20px;
-    padding: 0;
-    color: transparent;
-    background: url("../images/kobologo.svg") no-repeat 0 100%;
-    background-size: contain;
-
-    a, a:hover {
-      color: transparent;
-      font-size: 1em;
-    }
-  }
-
-  ul#nav {
-    flex-grow: 0;
-    margin: 0px;
-    padding: 24px 30px;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-
-    li {
-      display: inline-block;
-      margin-left: 1.2em;
-      margin-right: 0px;
-
-      a {
-        color: white;
-        text-decoration: none;
-      }
-
-      @media screen and (min-width: 769px) {
-        &.current a {
-          color: $blue;
-        }
-      }
-    }
-
-    @media screen and (max-width: 359px) {
-      padding: 24px 15px;
-    }
-  }
-}
-
 .bg {
   background: url("../images/front_background2.jpg") center center no-repeat;
   background-size: cover;
@@ -181,47 +126,6 @@ section.section {
 
   &:first-of-type {
     padding-top: 70px;
-  }
-
-  &#home {
-    color: white;
-    text-align: center;
-    position: relative;
-    min-height: 600px;
-
-    &:after {
-      content: ' ';
-      background: rgba(65, 68, 83, 0.75);
-      background: linear-gradient(to bottom, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0px;
-      top: 0px;
-    }
-
-    .container {
-      padding-top: 200px;
-      position: relative;
-      z-index: 2;
-
-      @media screen and (min-width: 769px) {
-        padding-top: 300px;
-      }
-    }
-
-    h1 {
-      text-transform: uppercase;
-      padding: 1em 2em;
-      font-size: 2.5rem;
-    }
-
-    @media screen and (max-width: 550px) {
-      h1 {
-        padding: 1em 0;
-        font-size: 2.2rem;
-      }
-    }
   }
 
   h2 {
@@ -252,7 +156,7 @@ section.section {
 }
 
 #features {
-  background: #F8F8F8;
+  background: $whitesmoke;
 }
 
 #blog {
@@ -367,7 +271,7 @@ section.section {
 }
 
 #about {
-  background: #F8F8F8;
+  background: $whitesmoke;
 
   .container {
     max-width: 640px;
@@ -527,7 +431,7 @@ section.section {
 }
 
 #help {
-  background: #F8F8F8;
+  background: $whitesmoke;
   text-align: center;
 
   .container {
@@ -559,6 +463,47 @@ footer {
         color: white;
         opacity: 1;
       }
+    }
+  }
+}
+
+section.section-slider {
+  color: white;
+  text-align: center;
+  position: relative;
+  min-height: 600px;
+
+  &:after {
+    content: ' ';
+    background: rgba(65, 68, 83, 0.75);
+    background: linear-gradient(to bottom, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .container {
+    padding-top: 200px;
+    position: relative;
+    z-index: 2;
+
+    @media screen and (min-width: 769px) {
+      padding-top: 300px;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    padding: 1em 2em;
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    h1 {
+      padding: 1em 0;
+      font-size: 2.2rem;
     }
   }
 }

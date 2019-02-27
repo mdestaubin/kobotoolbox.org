@@ -3,40 +3,67 @@
 .topnav {
   overflow: hidden;
   position: fixed;
+  z-index: 10;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: rgba($black, 0.8);
+  text-align: right;
 
   ul {
     list-style: none;
-  }
+    margin: 0;
+    padding: 0;
 
-  a {
-    text-orientation: right;
-    float: left;
-    background-color:#414453;
-    color: $white;
-    padding: 10px 8px;
-    text-decoration: none;
-    font-size: 16px;
+    li {
+      display: inline-block;
 
-    &:hover {
-      background-color: $gray;
-      color: black;
+      a {
+        display: inline-block;
+        color: $white;
+        padding: 10px 8px;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover {
+          color: $white;
+          opacity: 0.8;
+        }
+      }
+
+      @media screen and (min-width: 769px) {
+        &.current a {
+          color: $blue;
+        }
+      }
     }
   }
 }
 
-#khc {
+#khc,
+#members,
+#purpose {
   background: $whitesmoke;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+#committee,
+#vision,
+#join {
+  background: rgba($black, 0.8);
+  border-bottom: none;
+  color: $white;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 #committee {
   text-align: center;
-  padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.8);
-  border-bottom: none;
-
-  h3 {
-    color: $white;
-  }
 
   a {
     display: inline-block;
@@ -50,24 +77,7 @@
   }
 }
 
-#purpose {
-  background: $whitesmoke;
-
-  h2 {
-    text-align: center;
-  }
-}
-
 #vision {
-  color: $white;
-  padding: 60px 20px 100px 20px;
-  background: rgba(65, 68, 83, 0.8);
-  border-bottom: none;
-
-  h2 {
-    text-align: center;
-  }
-
   h3 {
     margin-top: 50px;
   }
@@ -84,19 +94,10 @@
   }
 }
 
-#members {
-  background: $white;
-}
+
 
 #join {
   text-align: center;
-  padding: 60px 20px 160px 20px;
-  background: rgba(65, 68, 83, 0.8);
-  border-bottom: none;
-
-  h2, h3, p {
-    color: $white;
-  }
 
   .button {
     margin-top: 40px;

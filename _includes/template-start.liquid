@@ -38,7 +38,7 @@
     style and icons
     {% endcomment %}
     <link href="{{ site.baseurl }}/css/normalize.css" rel="stylesheet" media="all">
-    <link href="{{ site.baseurl }}/css/index.css" rel="stylesheet" media="all">
+    <link href="{{ site.baseurl }}/css/index.css?{{ versionCache }}" rel="stylesheet" media="all">
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico?{{ versionCache }}">
 
     {% comment %}
@@ -57,7 +57,7 @@
     <header role="banner">
         <h1><a href="{{site.baseurl}}/#home">KoBoToolbox</a></h1>
         <nav role="navigation">
-            <ul id="nav">
+            <ul id="nav" class="js-one-page-nav">
                 <li class="hide-mobile"><a href="{{site.baseurl}}/#home">Home</a></li>
                 <li class="hide-mobile"><a href="{{site.baseurl}}/#features">Features</a></li>
                 <li><a href="{{site.baseurl}}/#sign-up">Sign Up</a></li>
